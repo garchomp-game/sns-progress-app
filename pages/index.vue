@@ -1,7 +1,7 @@
 <template lang='pug'>
 v-layout(column='', justify-center='', align-center='')
-  v-card(max-width='344')
-    v-card-title hello world
+  v-card(max-width='544')
+    v-card-title hello world hello world hello world hello world hello world hello world
 </template>
 
 <script>
