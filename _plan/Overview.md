@@ -31,24 +31,5 @@
         [日報]**リスト**を表示する
 
 日報投稿画面
-
-
-
-
-
-### パーツ
-
-日報
-    /const int n = 日数の数字が入る
-    /const string club = 部活名が入る
-    左<４分の１>に {
-        Day ${n}
-        ${club} 部
-    }
-    /const number currentTime = その日の合計時間が入る（２４時になると更新される
-    /const number totalTime = 今までの合計時間が入る
-    右<４分の３>に {
-        Today ${currentTime}  Total ${totalTime}
-        ${comment}
-    }
-    が表示される
+    [日報フォーム](テキスト＝登録) に必要事項を入力する
+    @(投稿ボタン)を押したら投稿する
