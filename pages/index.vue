@@ -4,35 +4,35 @@ v-layout(column='', justify-center='', align-center='')
     v-card-title hello world
 
   v-list
-    v-list-item(v-for="(item, index) in testUser" :key="index")
+    v-list-item(v-for="(item, index) in board" :key="index")
       span {{ item.name }}
 </template>
 
 <script>
-import firebase from "firebase/app";
-import "firebase/auth";
-import User from '@/models/User';
+import firebase from "firebase/app"
+import "firebase/auth"
+import Board from "@/models/Board"
+import { reduce, num } from "lodash"
 
 export default {
   data() {
     return {
       isLogin: false,
-      user: [],
-      testUser: []
-    };
+      board: []
+    }
+  },
+  computed: {
+    /**
+     * @return {number} totalTime 合計時間
+     */
+    async totalTime() {
+      // currentTimeの合計を求めたもの
+      const numList = await map(this.board, (num) => num)
+      return await reduce(numList, (result, num) => result + num)
+    }
   },
   mounted: function() {
-    User.new()
-    this.testUser = User.all()
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.isLogin = true;
-        this.user = user;
-      } else {
-        this.isLogin = false;
-        this.user = [];
-      }
-    });
-  },
-};
+    this.board = Board.all()
+  }
+}
 </script>

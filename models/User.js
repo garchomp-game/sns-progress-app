@@ -13,7 +13,7 @@ export default class User extends Model {
   static fields () {
     return {
       id: this.increment(null),
-      name: this.string('hoge'),
+      name: this.string(''),
       twitter_id: this.string('')
     }
   }

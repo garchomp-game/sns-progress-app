@@ -10,9 +10,9 @@
         ${club} 部
     }
     /const number currentTime = その日の合計時間が入る（２４時になると更新される
-    /const number totalTime = 今までの合計時間が入る
+    /const string comment = その日の出来事とかのコメント
     右<４分の３>に {
-        Today ${currentTime}  Total ${totalTime}
+        Today ${currentTime}
         ${comment}
     }
     が表示される
