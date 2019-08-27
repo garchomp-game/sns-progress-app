@@ -1,6 +1,6 @@
 ### パーツ
 
-日報
+日報(dairy-report)
     /data {
         int n = 日数の数字が入る
         string club = 部活名が入る
@@ -17,7 +17,7 @@
     }
     が表示される
 
-日報フォーム
+日報フォーム(daily-report-form)
     /props {
         string テキスト = 親から渡ってくるボタンに表示させるテキスト
     }
