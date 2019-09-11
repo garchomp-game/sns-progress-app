@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0"
@@ -20,14 +20,21 @@
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
     "@types/lodash": "^4.14.137",
+    "@types/node": "^12.7.4",
     "@vue/test-utils": "^1.0.0-beta.27",
     "@vuex-orm/core": "^0.32.1",
     "babel-jest": "^24.1.0",
-    "firebase": "^6.4.2",
+    "firebase": "^6.5.0",
+    "fs": "^0.0.1-security",
     "jest": "^24.1.0",
     "lodash": "^4.17.15",
+    "net": "^1.0.2",
     "pug": "2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "vue-jest": "^4.0.0-0"
+    "tls": "^0.0.1",
+    "twitter": "^1.7.1",
+    "vue-jest": "^4.0.0-0",
+    "vuefire": "^2.1.2",
+    "vuex-persistedstate": "^2.5.4"
   }
 }

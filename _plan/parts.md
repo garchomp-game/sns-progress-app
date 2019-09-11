@@ -1,4 +1,4 @@
-### パーツ
+# パーツ
 
 日報(dairy-report)
     /data {

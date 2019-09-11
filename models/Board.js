@@ -19,7 +19,5 @@ export default class Board extends Model {
       currentTime: this.number(null),
       comment: this.string(''),
     }
-  }
-
-  
+  }  
 }

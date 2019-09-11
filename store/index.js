@@ -12,4 +12,5 @@ database.register(User)
 database.register(Auth)
 database.register(Board)
 
-export const plugins = [ VuexORM.install(database) ]
+export const plugins = [VuexORM.install(database)
+]

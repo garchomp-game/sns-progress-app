@@ -1,5 +1,5 @@
 <template lang="pug">
-  DairyReportForm(:text='登録')
+  DairyReportForm(text='登録')
 </template>
 <script>
 import DairyReportForm from "@/components/daily-report-form";
